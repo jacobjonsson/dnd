@@ -1,0 +1,24 @@
+{
+  "name": "workout-exp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:server": "node server/index.js",
+    "start:esbuild": "esbuild client/index.ts --outfile=client/dist/index.js --format=esm --minify --bundle --watch"
+  },
+  "keywords": [],
+  "author": "Jacob Jonsson",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.25.3",
+    "fastify-compress": "^4.0.1",
+    "fastify-static": "^4.5.0",
+    "xstate": "^4.27.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.11",
+    "typescript": "^4.5.4"
+  }
+}
